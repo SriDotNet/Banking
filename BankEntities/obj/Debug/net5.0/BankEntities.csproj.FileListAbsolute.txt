@@ -1,0 +1,12 @@
+/Users/sri/Desktop/c#/Banking/BankEntities/bin/Debug/net5.0/BankEntities.deps.json
+/Users/sri/Desktop/c#/Banking/BankEntities/bin/Debug/net5.0/BankEntities.dll
+/Users/sri/Desktop/c#/Banking/BankEntities/bin/Debug/net5.0/ref/BankEntities.dll
+/Users/sri/Desktop/c#/Banking/BankEntities/bin/Debug/net5.0/BankEntities.pdb
+/Users/sri/Desktop/c#/Banking/BankEntities/obj/Debug/net5.0/BankEntities.csproj.AssemblyReference.cache
+/Users/sri/Desktop/c#/Banking/BankEntities/obj/Debug/net5.0/BankEntities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sri/Desktop/c#/Banking/BankEntities/obj/Debug/net5.0/BankEntities.AssemblyInfoInputs.cache
+/Users/sri/Desktop/c#/Banking/BankEntities/obj/Debug/net5.0/BankEntities.AssemblyInfo.cs
+/Users/sri/Desktop/c#/Banking/BankEntities/obj/Debug/net5.0/BankEntities.csproj.CoreCompileInputs.cache
+/Users/sri/Desktop/c#/Banking/BankEntities/obj/Debug/net5.0/BankEntities.dll
+/Users/sri/Desktop/c#/Banking/BankEntities/obj/Debug/net5.0/ref/BankEntities.dll
+/Users/sri/Desktop/c#/Banking/BankEntities/obj/Debug/net5.0/BankEntities.pdb

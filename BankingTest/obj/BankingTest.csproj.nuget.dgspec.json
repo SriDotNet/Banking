@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/sri/Desktop/c#/Banking/BankingTest/BankingTest.csproj": {}
+  },
+  "projects": {
+    "/Users/sri/Desktop/c#/Banking/BankEntities/BankEntities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sri/Desktop/c#/Banking/BankEntities/BankEntities.csproj",
+        "projectName": "BankEntities",
+        "projectPath": "/Users/sri/Desktop/c#/Banking/BankEntities/BankEntities.csproj",
+        "packagesPath": "/Users/sri/.nuget/packages/",
+        "outputPath": "/Users/sri/Desktop/c#/Banking/BankEntities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sri/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sri/Desktop/c#/Banking/BankingTest/BankingTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sri/Desktop/c#/Banking/BankingTest/BankingTest.csproj",
+        "projectName": "BankingTest",
+        "projectPath": "/Users/sri/Desktop/c#/Banking/BankingTest/BankingTest.csproj",
+        "packagesPath": "/Users/sri/.nuget/packages/",
+        "outputPath": "/Users/sri/Desktop/c#/Banking/BankingTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sri/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/sri/Desktop/c#/Banking/BankEntities/BankEntities.csproj": {
+                "projectPath": "/Users/sri/Desktop/c#/Banking/BankEntities/BankEntities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
