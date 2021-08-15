@@ -1,11 +1,11 @@
 
-Task:
+Requirement:
 
-Write an object-oriented program, preferably using C#, adhering to the simple requirements listed below. This program should require no input to run and 
-should not have a user interface. To demonstrate the functionality of your application, please write test classes that invoke a deposit, 
+Write an object-oriented program,  using C#, adhering to the simple requirements listed below. This program should require no input to run and 
+should not have a user interface. To demonstrate the functionality of the application, please write test classes that invoke a deposit, 
 a withdrawal, and a transfer. 
 
-Requirement: This is a simple bank program. 
+This is a simple bank program. 
 A bank has a name. 
 A bank also has several accounts. 
 An account has an owner and a balance. 
@@ -20,7 +20,8 @@ Solution:
 
 This solution consists of two Projects .
 
-1.BankEntities is a ClassLibrary consists of basic Classes 
+1. BankEntities 
+   It is a ClassLibrary consists of basic Classes 
    Bank Class (Properties:BankName and Accounts
    Methods:CreateAccount,ProcessTransaction,GetAccountById)
    EnumerationTypes:PrimaryAccountType,SecondaryAccountType,TransactionType)
