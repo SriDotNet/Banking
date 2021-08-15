@@ -77,6 +77,7 @@ namespace BankEntities
         
        }
 
+      /*Method to get Account by AccountId*/
        public Account GetAccountbyId(string accountId){
          Account acc=Accounts.FirstOrDefault(o => o.AccountId == accountId);
          return acc;
@@ -105,83 +106,7 @@ namespace BankEntities
          }
          
      
-       /*Method to withdraw*/
-       public TransctionStatus WithdrawlAmount(Account account,Transaction taction){
-           //keeps track of Transaction status and return to the calling method
-            TransctionStatus ts=new TransctionStatus();
-            if(haveEnoughFunds(account.Balance,taction.Amount)){
-
-               //Verify the Account Type id Individual Checking Account
-             if(account.PrimaryAccType==PrimaryAccountType.Investment && account.SubAccType==SubAccountType.Individual){
-
-               if(taction.Amount<=500){
-                 account.Balance-=taction.Amount;
-                 ts.Info=$"Amount successfully Withdrawled from Account {account.AccountId} and the current balance is : {account.Balance}";
-                 ts.Success=true;
-                 return ts;
-               }else{
-                
-                 ts.Info="The max Withdrawl amount is 500 only.";
-                 ts.Success=false;
-
-                 return ts;
-                }
-              }//If the Account is not Individual Account
-              else
-              {
-           
-                account.Balance-=taction.Amount;
-                ts.Info=$"Amount successfully Withdrawed from Account {account.AccountId} and the current balance is : {account.Balance}";
-                ts.Success=true;
-                return ts;
-             
-             }
-            }else{
-            ts.Info="Insufficient Funds. ";
-            ts.Success=false;
-            return ts;
-            }
-           
-           
-           
-        }
        
-       /* Method to Transfer */
-       public TransctionStatus Transfer(Account account,Transaction taction){
-
-            //keeps track of Transaction status and return to the calling method
-            TransctionStatus ts=new TransctionStatus();
-
-            if(haveEnoughFunds(account.Balance,taction.Amount)){
-            Account destAcc=GetAccountbyId(taction.ToAccountId);
-            if(destAcc==null){
-                ts.Info=$"Transaction failed becuase Destination Account with AccountId{account.AccountId} not found.";
-                ts.Success=false;
-                return ts;
-            }else{
-            account.Balance-=taction.Amount;
-            destAcc.Balance+=taction.Amount;
-            ts.Info=$"Amount {taction.Amount} successfully transfered from Account {account.AccountId} to Account : {destAcc.AccountId} ";
-            ts.Success=true;
-
-            return ts;
-            }
-            }
-            else
-            {
-            ts.Info=$"Transaction failed becuase of insufficient Funda in the Account {account.AccountId}";
-            ts.Success=false;
-
-            return ts;
-            }
-
-           
-       }
-    
-      private bool haveEnoughFunds(double accBalance,double amt){
-           if(accBalance>amt) return true; else return false;
-
-       }
 
     
     

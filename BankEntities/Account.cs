@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace BankEntities
 {
    
-
+    /*Unique AccountId creation is out of scope*/
     public class Account{
       private string _accountId;
       private string _ownerName;
@@ -50,6 +50,7 @@ namespace BankEntities
           PrimaryAccType=primAccType;
          
       }
+
       /*Method to Deposit */
        public TransctionStatus DepositAmount(Transaction taction){
             //keeps track of Transaction status and return to the calling method
@@ -142,6 +143,7 @@ namespace BankEntities
        }
     
       private bool haveEnoughFunds(double accBalance,double amt){
+
            if(accBalance>amt) return true; else return false;
 
        }
