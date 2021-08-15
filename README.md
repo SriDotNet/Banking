@@ -22,9 +22,10 @@ This solution consists of two Projects .
 
 1.BankEntities is a ClassLibrary consists of basic Classes 
    Bank Class (Properties:BankName and Accounts
-   Methods:CreateAccount,ProcessTransaction,DepositAmount,WithdrawlAmount,TransferAmount
+   Methods:CreateAccount,ProcessTransaction,GetAccountById)
    EnumerationTypes:PrimaryAccountType,SecondaryAccountType,TransactionType)
-   Account Class :(Properties:AccountId,Owner,Balance,PrimaryAccountType,SecondaryAccountType )
+   Account Class :(Properties:AccountId,Owner,Balance,PrimaryAccountType,SecondaryAccountType 
+   Methods: DepositAmount,WithdrawlAmount,TransferAmount)
    Transaction Class:(Properties:TransactionType,Amount,ToDestinationAccount)
    Three EnumerationTypes created to hold PrimaryAccountType,SecondaryAccountType,TransactionTypes.
    
