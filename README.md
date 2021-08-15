@@ -50,6 +50,6 @@ This solution consists of two Projects .
  ProcessInValidTransferDestNotFound. --> Verifies the destination account not found.
 
 
-/*
+Note:
 UserInterface,Input Constraints and Unique Account Id Creation,Exception logging or handling are out of scope.
-*/
+
