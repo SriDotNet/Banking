@@ -89,12 +89,13 @@ namespace BankEntities
          switch (transaction.TType)
          {
              case TransactionType.Deposit:
-             return DepositAmount(acc,transaction);
-        
+             return acc.DepositAmount(transaction);
+           
              case TransactionType.Withdrawl:
-              return WithdrawlAmount(acc,transaction);
+              return acc.WithdrawlAmount(transaction);
              case TransactionType.Transfer:
-              return Transfer(acc,transaction);
+              Account toAcc=GetAccountbyId(transaction.ToAccountId);
+              return acc.Transfer(transaction,toAcc);
              default:
              ts.Info="Invalid Transaction Type.";
              ts.Success=false;
@@ -102,23 +103,8 @@ namespace BankEntities
          }
         
          }
-         /*Method to Deposit */
-       public TransctionStatus DepositAmount(Account account,Transaction taction){
-            //keeps track of Transaction status and return to the calling method
-           TransctionStatus ts=new TransctionStatus();
-           if(taction.Amount>0){
-            account.Balance+=taction.Amount;
-            ts.Info=$"Amount successfully Deposited  to the  Account {account.AccountId} and the current balance is : {account.Balance}";
-            ts.Success=true;
-            return ts;
-       }else
-       {
-            ts.Info=$"Invalid Amount.";
-            
-            ts.Success=false;
-            return ts;
-       }
-       }
+         
+     
        /*Method to withdraw*/
        public TransctionStatus WithdrawlAmount(Account account,Transaction taction){
            //keeps track of Transaction status and return to the calling method
